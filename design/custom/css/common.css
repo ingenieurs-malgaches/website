@@ -1,0 +1,31 @@
+
+/* 
+    Created on : 3 janv. 2015, 17:46:56
+    Author     : im
+*/
+
+body {
+    margin : 20px;
+    padding : 10px;
+}
+
+h5 {
+    
+    font-size: 20px;
+}
+
+table {
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+}
+table td {
+    border : 1px solid silver;
+    padding : 5px;
+   
+}
+
+a {
+    font-weight: bold;
+}
+

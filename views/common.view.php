@@ -4,6 +4,8 @@
      
      public $template;
      
+     public $content;
+     
      public function __construct() {
          $this->template = $this->getDefaultTemplate();
      }

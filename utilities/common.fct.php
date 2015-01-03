@@ -33,6 +33,31 @@
             }
         }
         
+        public static function secure($value) {
+            return htmlspecialchars(strip_tags($value));
+        }
+        
+        public static function get_data($key) {
+        
+            $resource = DATA . $key . '.htm';
+            
+            if(file_exists($resource)) {
+                
+                $handle = fopen($resource, 'r');
+                
+                if(!$handle) {
+                    die("Impossible de recuperer les donnees.");
+                } 
+                
+                $content = fread($handle, filesize($resource));
+                
+                fclose($handle);
+                return $content;
+            } else {
+                die('Resource introuvable');
+            }
+        }
+        
         
     }
 

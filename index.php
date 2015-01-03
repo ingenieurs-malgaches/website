@@ -79,6 +79,7 @@
      * des resultats a l'utilisateur
      */
     $common_ctrl = new __Common_Controller();
+    $common_ctrl->execute();
     
     $view = $common_ctrl->getView();
     
